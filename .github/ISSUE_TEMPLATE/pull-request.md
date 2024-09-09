@@ -1,12 +1,3 @@
----
-name: Pull request
-about: Write down all your pull request
-title: ''
-labels: ''
-assignees: ''
-
----
-
 ### Description
 
 Briefly describe what this pull request does.
