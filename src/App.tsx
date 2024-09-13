@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import React, { } from 'react'
+import { NavbarMobile } from './components/Fragments/NavbarMobile'
+import { NavbarDesktop } from './components/Fragments/NavbarDesktop'
 
-function App() {
+export const App = () => {
+
   return (
-    <>
-      <h1 className='text-2xl font-bold'>Hello world!!</h1>
-    </>
+    <div>
+      <NavbarMobile></NavbarMobile>
+      <NavbarDesktop></NavbarDesktop>
+    </div>
   )
 }
 
-export default App
