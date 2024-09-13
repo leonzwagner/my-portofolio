@@ -1,12 +1,9 @@
-import { useState } from 'react'
-import './App.css'
+import React, { } from 'react'
 
-function App() {
+export const App = () => {
+
   return (
-    <>
-      <h1 className='text-2xl font-bold'>Hello world!!</h1>
-    </>
+    <div></div>
   )
 }
 
-export default App
