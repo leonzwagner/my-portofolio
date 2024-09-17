@@ -31,7 +31,9 @@ export default {
       "surface0": "#ccd0da",
       "base": "#eff1f5",
       "mantle": "#e6e9ef",
-      "crust": "#dce0e8"
+      "crust": "#dce0e8",
+
+      "base-mocha": "#1e1e2e"
     },
     extend: {},
   },
