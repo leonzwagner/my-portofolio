@@ -1,13 +1,12 @@
-import React from 'react' 
+import React from 'react'
 
-interface ListParentProps {
-  style: string
+interface ListNavProps {
   children: React.ReactNode
 }
 
-export const ListParent = ({ style, children }: ListParentProps) => {
+export const ListNav = ({ children }: ListNavProps) => {
   return (
-    <div className={style}>{children}</div>
+    <nav className='text-sm rounded-lg font-semibold bg-lavender sticky top-0 text-text-mocha h-10 w-60 flex items-center justify-evenly sm:text-lg sm:w-64 sm:h-12'>{children}</nav>
   )
 }
 
