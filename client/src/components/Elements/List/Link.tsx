@@ -6,8 +6,9 @@ interface LinkProps {
 }
 
 export const Link = ({ href = '/home', children }: LinkProps) => {
+
   return (
-    <a className='sm:text-xl text-sm font-semibold' href={href}>{children}</a>
+    <a className='p-2' href={href}>{children}</a>
   )
 }
 
