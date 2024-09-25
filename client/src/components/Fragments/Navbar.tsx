@@ -1,19 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ListNav } from '../Elements/List/Index'
 import { Link } from '../Elements/List/Link'
-import { House, BookOpenText, Blocks, Server } from 'lucide-react'
+
+const colors = [
+  'decoration-lavender',
+  'decoration-yellow-mocha',
+  'decoration-green-mocha',
+  'decoration-maroon-mocha'
+]
 
 export const Navbar = () => {
+  const [hoverColor, setHoverColor] = useState('')
+
+  const getRandomColor = () => {
+    const randomIndex = Math.floor(Math.random() * colors.length)
+    return colors[randomIndex]
+  }
+
+  const handleMouseOver = () => {
+    setHoverColor(getRandomColor())
+  }
+
+  const handleMouseOut = () => {
+    setHoverColor('')
+  }
+
   return (
-    <header className='min-h-screen flex justify-center py-8'>
+    <header className='flex justify-center py-8'>
       <ListNav>
-        <Link href='/home'><House /></Link>
+        <Link color={hoverColor} href='/home' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>home</Link>
 
-        <Link href='/blog'><BookOpenText /></Link>
+        <Link color={hoverColor} href='/blog' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>blog</Link>
 
-        <Link href='/project'><Blocks /></Link>
+        <Link color={hoverColor} href='/project' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>project</Link>
 
-        <Link href='/about'><Server /></Link>
+        <Link color={hoverColor} href='/about' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>github</Link>
 
       </ListNav>
     </header>
