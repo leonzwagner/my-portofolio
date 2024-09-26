@@ -7,9 +7,11 @@ interface SpanProps {
 
 export const Span = ({ style, children }: SpanProps) => {
   return (
-    <div className='w-64'>
-      <span className={style}>{children}</span>
-    </div>
+    <span className={style}>{children}</span>
   )
 }
 
+
+//<div className='w-64'>
+//  <span className={style}>{children}</span>
+//</div>
