@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-base-mocha
+  @apply bg-base-mocha;
+  @apply font-iosevka;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('../public/IosevkaSS01-Regular.ttc');
 }
