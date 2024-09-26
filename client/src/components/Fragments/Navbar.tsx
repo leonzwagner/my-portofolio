@@ -34,7 +34,8 @@ export const Navbar = () => {
 
         <Link color={hoverColor} href='/project' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>project</Link>
 
-        <Link color={hoverColor} href='/about' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>github</Link>
+        <Link color={hoverColor} href='https://github.com/akhdrzki' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>github</Link>
+        <Link color={hoverColor} href='/project' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>linkedin</Link>
 
       </ListNav>
     </header>
