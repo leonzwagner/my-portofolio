@@ -60,7 +60,11 @@ export default {
       "mantle-mocha": "#181825",
       "crust-mocha": "#11111b"
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'iosevka': ['Iosevka', 'sans-serif']
+      }
+    },
   },
   plugins: [],
   darkMode: "class",
