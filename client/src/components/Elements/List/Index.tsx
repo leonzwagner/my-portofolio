@@ -6,7 +6,7 @@ interface ListNavProps {
 
 export const ListNav = ({ children }: ListNavProps) => {
   return (
-    <nav className='text-lg text-text-mocha flex flex-wrap'>{children}</nav>
+    <nav className='text-xl text-text-mocha flex space-x-4 justify-center flex-wrap w-[20rem] sm:w-[30rem]'>{children}</nav>
   )
 }
 
