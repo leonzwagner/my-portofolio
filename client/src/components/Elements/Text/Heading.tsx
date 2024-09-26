@@ -7,9 +7,11 @@ interface HeadingProps {
 
 export const Heading = ({ children, style }: HeadingProps) => {
   return (
-    <div className='w-64 text-left'>
-      <h1 className={style}>{children}</h1>
-    </div>
+    <h1 className={style}>{children}</h1>
   )
 }
 
+
+// <div className='w-64 text-left'>
+//    <h1 className={style}>{children}</h1>
+// </div>
