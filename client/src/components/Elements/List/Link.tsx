@@ -11,7 +11,7 @@ interface LinkProps {
 export const Link = ({ href = '/home', children, color = 'decoration-lavender', onMouseOver, onMouseOut }: LinkProps) => {
 
   return (
-    <a className={`p-2 hover:underline hover:font-extrabold decoration-2 ${color}`} onMouseOver={onMouseOver} onMouseOut={onMouseOut} href={href}>{children}</a>
+    <a className={`p-2 hover:underline hover:text-overlay2 hover:font-extrabold hover:decoration-2 hover:text-2xl ${color}`} onMouseOver={onMouseOver} onMouseOut={onMouseOut} href={href}>{children}</a>
   )
 }
 
